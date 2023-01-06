@@ -1,0 +1,42 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+body{
+    background-color: #1c1c1c;
+    opacity: 10;
+    overflow-x: hidden;
+    font-family: "Roboto", "Sans Serif";
+    cursor: none;
+}
+
+body::-webkit-scrollbar {
+    width: 6px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+   
+body::-webkit-scrollbar-thumb {
+    background: rgb(255, 254, 254); 
+  }
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #1163ff;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+  }
+
+body::-webkit-scrollbar-thumb:active {
+    background-color: #232323;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+

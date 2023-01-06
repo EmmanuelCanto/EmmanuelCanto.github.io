@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/barba.css">
+    <link rel="stylesheet" href="css/scene.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/aboutme.cssz">
+    <link rel="stylesheet" href="css/aboutme.css">
+    <link rel="stylesheet" href="css/pop_emergente.css">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="./img/logo.ico" />
+
+    <link rel="stylesheet" href="css/context-menu.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="/icons/copy.svg">
+
+
+    <title>Inicio</title>
+</head>    
+<body data-barba="wrapper">
+    <!------------CURSOR---------------  -->
+    <div class="curzr" hidden></div>
+    <!-- ------------------------------------------------------ -->
+    <!-- <div class="loader">
+        <div class="page-transition"><div class="bb8"></div></div>
+    </div> -->
+    <!-- </div> -->
+    
+    
+    <!-- --------------CONTEXT MENU------------------- -->
+    <div class="wrapper">
+      <div class="content-menu">
+        <ul class="menu">
+          <li class="item">
+            <i class="uil uil-info-circle"></i>
+            <span id="open">Info</span>
+          </li>
+          <li class="item share">
+            <div>
+              <i class="uil uil-share"></i>
+              <span>Redes</span>
+            </div>
+            <i class="uil uil-angle-right"></i>
+            <ul class="share-menu">
+              <li class="item">
+                <i class="uil uil-twitter-alt"></i>
+                <span><a href="https://twitter.com/Jossjo_" target="_blank">Twitter</a></span>
+              </li>
+              <li class="item">
+                <i class="uil uil-instagram"></i>
+                <span><a href="https://www.instagram.com/jemm013/" target="_blank">Instagram</a></span>
+              </li>
+              <li class="item">
+                <i class="uil uil-github-alt"></i>
+                <span><a href="https://github.com/EmmanuelCanto" target="_blank">GitHub</a></span>
+              </li>
+            </ul>
+          </li>
+          <div class="setting">
+            <li class="item">
+              <i class="uil uil-redo"></i>
+              <span onclick="refrescarPagina()">Recargar</span>
+            </li>
+          </div>
+        </ul>
+      </div>
+  </div>
+
+    <!-- ------------------------------------------------------ -->
+
+    <!-- ---------------------------------HEADER------------------------------- -->
+    <header class="cd-header">
+        <div class="header-wrapper">
+          <div class="logo-wrap">
+            <a href="#""><img src="img/logo-sin-fondo-min.png" style="width: 5em;" alt=""></a>
+          </div>
+          <div class="nav-but-wrap">
+            <div class="menu-icon hover-target">
+              <span class="menu-icon__line menu-icon__line-left"></span>
+              <span class="menu-icon__line"></span>
+              <span class="menu-icon__line menu-icon__line-right"></span>
+            </div>					
+          </div>					
+        </div>				
+    </header>
+      
+      <div class="nav">
+        <div class="nav__content">
+          <ul class="nav__list">
+            <li class="nav__list-item active-nav"><a href="#banner" class="hover-target">Inicio</a></li>
+            <li class="nav__list-item"><a href="#portfolio" class="hover-target">Portafolio</a></li>
+            <li class="nav__list-item"><a href="#about-me" class="hover-target">Sobre mi</a></li>
+            <li class="nav__list-item"><a href="#contact" class="hover-target">Contactos</a></li>
+          </ul>
+        </div>
+      </div>	
+      
+      <!-- ---------------------------------------------------------->
+
+      <!-- -------------------------BANNER------------------------------->
+      
+      <main data-barba="container"  data-barba-namespace="home-section">
+        <div class="banner" id="banner">
+            <div class="content">
+                <main class="text-title">
+                    <p>Hola! Soy</p>
+                    <section class="animation">
+                      <div class="first"><div>Emmanuel</div></div>
+                      <div class="second"><div>Backend</div></div>
+                      <div class="third"><div>Creativo</div></div>
+                    </section>
+                  </main>
+                <div data-tooltip="Size: 63KB" class="button">
+                    <div class="button-wrapper">
+                        <div class="text">C.V</div>
+                        <span class="icon" onclick="window.open('/documents/C.V.pdf')">
+                        <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" height="2em" width="2em" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="none"></path></svg>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="content-img">
+                <img src="./img/mepixelart.png" alt="">
+            </div>
+            <img src="./img/Recurso 1.png" alt="">
+        </div>
+        <!-- ------------------------------------------------------ -->
+
+        <!-- ------------------------------PORTAFOLIO---------------------- -->
+        <div class="portfolio" id="portfolio">
+            <h1>PORTAFOLIO</h1>
+            <div class="grid">
+                <div class="cont-cart"">
+                    <div id="cont-img" class="item-1">
+                        <div id="element">
+                            <h1>Titulo del proyecto</h1>
+                            <p>En este proyecto se desarrollo un sistema de gestion de datos para una empresa...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cont-cart2"">
+                    <div id="cont-img2" class="item-2">
+                        <div id="element2">
+                            <h1>Titulo del proyecto</h1>
+                            <p>En este proyecto se desarrollo un sistema de gestion de datos para una empresa...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cont-cart3"">
+                    <div id="cont-img3" class="item-3">
+                        <div id="element3">
+                            <h1>Titulo del proyecto</h1>
+                            <p>En este proyecto se desarrollo un sistema de gestion de datos para una empresa...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cont-cart4"">
+                    <div id="cont-img4" class="item-4">
+                        <div id="element4">
+                            <h1>Titulo del proyecto</h1>
+                            <p>En este proyecto se desarrollo un sistema de gestion de datos para una empresa...</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>            
+        </div>
+        <!-- ------------------------------------------------------ -->
+        
+        <!-- ------------------------SOBRE MI------------------------- -->
+        <div class="about-me" id="about-me">
+            <div class="container-txt">
+              <h1>SOBRE MI</h1>
+              <p>Mi nombre es Emmanuel nacido en una isla muy pequeña en México, actualmenten tengo 22 años y estoy en busca de empezar mi sueño profesional como programador, he estado enamorado desde los 16 años con la programacion pero como mencionado anteriormente provengo de un lugar donde no había oportunidades para poder hacerlo, así que me adentre a un mundo similiar que no me sentía satisfecho del todo.<br></p>  
+              <p>Cuando se normalizo mas la pandemia se abrieron muchas puertas para mí con la mente más madura, sabía que tenía la oportunidades de conseguir el sueño que tanto quería así que me puse manos a las obras y empece a estudíar para conseguirlo, dejando a lo que me he dedicado por mucho tiempo para empezar algo nuevo, lo que en verdad quería, era realmente... ¡emocionante!<br></p>
+              <p>Esta pagína representa varias aspectos de mí como parecer bastante serio y simple, pero cuando te llego a compartir aspectos de mí, encontrarás muchos colores y formas. <br> </p>                
+                
+                <div class="contact" id="contact">
+                    <div class="copy"><h1>© Emmanuel Canto - 2022</h1></div>
+                    <div class="socials">
+                        <a href="#"><img src="./img/git.png" alt="Loho GitHub"></a>
+                        <a href="#"><img src="./img/in.png" alt="Logo Linkedin"></a>
+                        <a href="#"><img src="./img//twitter.png" alt="Logo twitter"></a>
+                    </div>
+              </div>
+          </div>
+        <!-- ------------------------------------------------------ -->
+        </div>
+
+        
+    <!-- ------------------------- PANTALLA POP DE INFO ----------------------- -->
+
+    <div id="modal_container" class="modal-container">
+      <div class="modal">
+        <h1 id="info-pop"><li class="uil-info-circle">Info</li></h1>
+        <p id="text-pop">
+          Pagina creadas gracias algunos de mis hobbies más apreciados para mí como el Pixel Art y el anime, tomando de este último muchas referencias. <br><br> 
+          Tomo bastante tiempo más que nada por algunas imágenes, pero valió la pena. No soy un artista ni nada por el estilo, solo me gusta convertir cosas en Pixel Art:) 
+        </p>
+        <img src="/img/deku.png" alt="deku.png" id="img-pop">
+        <div class="close-pop">
+          <button id="close">Cerrar</button>
+        </div>
+      </div>
+
+    <!-- --------------------------------------------------------------------- -->
+
+      </main>
+    <script type="text/javascript" src="js/header.js"> </script>
+    <script type="text/javascript" src="js/context-menu.js"></script>
+    <script type="text/javascript" src="js/barba.main.js"> </script>
+    <script type="text/javascript" src="js/pointer.js"></script>
+    <script type="text/javascript" src="js/pop_emergente.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

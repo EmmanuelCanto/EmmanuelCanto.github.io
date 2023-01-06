@@ -1,0 +1,69 @@
+
+/* ----------------SOBREMI---------------- */
+.about-me{
+    flex-flow: row wrap;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/aktsuki2.png);
+    background-position: 10px;
+    background-repeat:repeat ;
+    align-items: center;
+    display: flex;
+    align-content: center;
+    min-height: 900px;
+}
+
+.container-txt{
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+  
+    border-radius: 5px;
+    width: 800px;
+    height: 700px;
+    padding: 30px;
+    background-color: #fff;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.container-txt > p {
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    
+    grid-template-rows: minmax(20px, auto);
+}
+
+.copy {
+    display: grid;
+    align-content: center;
+}
+
+.copy > h1{
+    font-size: 20px;
+    color: #565656;
+    
+}
+
+.socials {
+    align-content: center;
+    text-align: right;
+}
+
+.socials >img {
+    padding-left: 15px;
+}
+
+
+

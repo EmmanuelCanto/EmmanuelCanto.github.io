@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+.wrapper{
+	box-sizing: border-box;
+	z-index: 10;
+	visibility: hidden;
+	position:fixed;
+	width: 12em;
+	border-radius: 10px;
+	background: #fff;
+	box-shadow: 0 12px 35px rgba(0,0,0,0.1);
+  }
+  .wrapper .menu{
+	padding: 10px 12px;
+  }
+  .content-menu .item{
+	color: #141414;
+	list-style: none;
+	font-size: 22px;
+	height: 50px;
+	display: flex;
+	width: 100%;
+	cursor: pointer;
+	align-items: center;
+	border-radius: 5px;
+	margin-bottom: 2px;
+	padding: 0 5px 0 10px;
+	font-family: "Roboto";
+
+}
+
+  .content-menu > .item:hover{
+	background: #f2f2f2;
+	transition: all 250ms ease-in;
+	-webkit-transition: all 250ms ease-in;
+	-moz-transition: all 250ms ease-in;
+	-ms-transition: all 250ms ease-in;
+	-o-transition: all 250ms ease-in;
+  }
+  .content-menu > .item span{
+	margin-left: 8px;
+	font-size: 19px;
+  }
+  .content-menu > .setting{
+	display: flex;
+	margin-top: -5px;
+	padding: 5px 12px;
+	border-top: 1px solid rgb(239, 246, 247);
+  }
+  .content-menu > .share{
+	position: relative;
+	justify-content: space-between;
+  }
+  .share > .share-menu{
+	position: absolute;
+	background: #fff;
+	width: 8em;
+	right: -200px;
+	top: -35px;
+	padding: 13px;
+	opacity: 0;
+	pointer-events: none;
+	border-radius: 10px;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.08);
+	transition: 0.2s ease;
+	-webkit-transition: 0.2s ease;
+	-moz-transition: 0.2s ease;
+	-ms-transition: 0.2s ease;
+	-o-transition: 0.2s ease;
+}
+  .share:hover .share-menu{
+	opacity: 1;
+	pointer-events: auto;
+  }
+
+.uil-copy:before {
+    content: '\e951';
+    color: rgb(65, 159, 236);
+	padding-right: .3em;
+}
+
+.uil-info-circle:before {
+    content: '\e9ad';
+    color: rgb(255, 213, 0);
+	padding-right: .3em;
+}
+
+.uil-share:before {
+    content: '\ec62';
+    color: rgb(163, 245, 138);
+}
+.uil-arrow:before {
+    content: '\eb30';
+    content: "";
+    color: rgb(255, 96, 96);
+}
+
+.uil-twitter-alt::before{
+	color:#1d9bf0;
+	padding-right: .3em;
+}
+
+
+.uil-instagram::before{
+	color:#d1417a;
+	padding-right: .3em;
+}
+
+.uil-github-alt::before{
+	color: #222222;
+	padding-right: .3em;
+}
+
+.uil-angle-right::before{
+	color: rgb(65, 159, 236);
+} 
+
+.uil-redo::before{
+	color: #d1417a;
+	padding-right: .3em;
+}

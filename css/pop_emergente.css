@@ -1,0 +1,98 @@
+#close {
+	background-color: #1a1a1a;
+	border: 0;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	color: #fff;
+	font-size: 14px;
+	padding: 10px 25px;
+	transition: all 300ms ease;
+	-webkit-transition: all 300ms ease;
+	-moz-transition: all 300ms ease;
+	-ms-transition: all 300ms ease;
+	-o-transition: all 300ms ease;
+}
+
+  #close:hover{
+	background-image: url('../img/berserker.png');
+	align-content: center;
+	align-items: center;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: 0px -8px;
+  }
+  
+  .modal-container {
+    z-index: 5;
+	display: flex;
+	backdrop-filter: blur(2px);
+	background-color: rgba(0, 0, 0, 0);
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	pointer-events: none;
+	opacity: 0;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	transition: opacity 0.3s ease;
+}
+  
+  .show {
+	pointer-events: auto;
+	opacity: 1;
+  }
+  
+  .modal {
+	padding: 2em;
+	color: #fff;
+	background-color: #1a1a1a;
+	overflow: hidden;
+	margin: 0 auto;
+	width: 50em;
+	height: 30em;
+	display: grid;
+	grid-template-columns:repeat(2, 1fr);
+	align-items: stretch;
+	gap: 1em;
+	border-radius:3px ;
+	-webkit-border-radius:5px ;
+	-moz-border-radius:3px ;
+	-ms-border-radius:3px ;
+	-o-border-radius:3px ;
+	justify-items: center;
+	align-items: center;
+
+}
+  
+  .modal > h1 {
+	margin: 0;
+    list-style: none;
+  }
+  
+  .modal > p {
+	font-size: 1.3em;
+	color: #fff;
+  }
+
+  #info-pop{
+	grid-column: 1/3;
+	height: 2em;
+  }
+
+  #text-pop{
+	grid-column: 1/2;
+  }
+
+  .close-pop{
+
+	grid-column: 1/3;
+	align-self: center;
+	justify-self: center;
+  }
+
+  #info-pop > .uil-info-circle:before{
+	color: rgb(255, 213, 0);
+	padding-right: .2em;
+  }
